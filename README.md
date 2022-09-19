@@ -11,14 +11,17 @@ amount of moves the puzzle could be solved in.
 I coded in Java and used 3 extra classes that I made myself:
 
 - holdPuzzle
+
   This class keeps track of the order the puzzles are in. I use a 2D array to simulate the 3x3 space the puzzles are in, and this class holds
   that 2D array. I mostly use this to compare puzzles and keep track of past puzzles.
 
 - puzzleArray
+
   This class is similar to holdPuzzle but I use it to keep track of the new moves that can be made. It also keeps track of how many moves
   have been made in the sequence of moves currently being explored (to find the smallest amount of moves possible).
 
 - coords
+
   I use this class to keep track of where in the 2D the empty space is, and the tile that I want to move. I use this information to
   simulate and execute moves.
 
